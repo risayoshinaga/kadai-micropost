@@ -17,6 +17,7 @@ class User extends Authenticatable
     protected $fillable = [
         'name', 'email', 'password',
     ];
+    
 
     /**
      * The attributes that should be hidden for arrays.
@@ -27,3 +28,9 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 }
+
+ User::create([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'password' => bcrypt($data['password']),
+            ]);
