@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body {
+    width:1000px;
+    margin-top: 30px;
+    padding: 0;
+    color: white;
+    background: black;
+}
+
+table {
+    table-layout: fixed; 
+}
+td, th {
+    border:2px solid white;
+}
+
+#wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+#command {
+    width: 290px;
+    height: 300px;
+    float: left;
+    border: 1px solid white;
+}
+
+#explanation {
+    width: 690px;
+    height:300px;
+    float: right;
+    border: 1px solid white;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+footer {
+    background-color: black;
+    text-align: center;
+}

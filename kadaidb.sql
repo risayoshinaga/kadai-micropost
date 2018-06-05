@@ -1,0 +1,6 @@
+CREATE TABLE kadaidb.kadais (
+    id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    title VARCHAR(50),
+    price INT,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
