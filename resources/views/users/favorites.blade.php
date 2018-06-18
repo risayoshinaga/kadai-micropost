@@ -21,9 +21,6 @@
                 <li role="presentation" class="{{ Request::is('users/*/favoritings') ? 'active' : '' }}"><a href="{{ route('users.favoritings', ['id' => $user->id]) }}">Favorites <span class="badge">{{ $count_favorites }}</span></a></li>
             </ul>
             
-            @if (count($microposts) > 0)
-                @include('microposts.microposts', ['microposts' => $microposts])
-            @endif
         </div>
     </div>
 @endsection
