@@ -8,13 +8,13 @@ class FavoriteController extends Controller
 {
     public function store(Request $request, $id)
     {
-        \Auth::mocropost()->favorite($id);
+        \Auth::user()->favorite($id);
         return redirect()->back();
     }
 
     public function destroy($id)
     {
-        \Auth::micropost()->favorite($id);
+        \Auth::user()->unfavorite($id);
         return redirect()->back();
     }
 }

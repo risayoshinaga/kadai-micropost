@@ -115,7 +115,7 @@ public function unfavorite($micropostId)
     }
 }
 public function is_favoriting($micropostId) {
-    return $this->favoritings()->where('micropost_id', $micropostId)->exists();
+    return $this->favoritings()->where('favorite_id', $micropostId)->exists();
 }
     
 }
